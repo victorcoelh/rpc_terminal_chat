@@ -1,0 +1,14 @@
+syntax = "proto3";
+package othello_rpc;
+
+service Chat {
+    rpc SendMessage (ChatRequest) returns (Empty);
+}
+
+message ChatRequest {
+    string text = 1;
+}
+
+message Empty {
+    
+}

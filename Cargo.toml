@@ -1,0 +1,13 @@
+[package]
+name = "rpc-terminal-chat"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tonic = "*"
+prost = "0.13"
+tokio = { version = "1.0", features = ["macros", "rt-multi-thread"] }
+text_io = "0.1.12"
+
+[build-dependencies]
+tonic-build = "*"
